@@ -82,20 +82,27 @@ if st.button("Generate Answer"):
     # STEP 1: PromptTemplate.invoke()
     # --------------------------------------
 
-    prompt = template.invoke({
-        "role": role_variable,
-        "topic": topic_variable,
-        "difficulty": difficulty_variable
-    })
+    # prompt = template.invoke({
+    #     "role": role_variable,
+    #     "topic": topic_variable,
+    #     "difficulty": difficulty_variable
+    # })
 
 
     # --------------------------------------
     # STEP 2: ChatModel.invoke()
     # --------------------------------------
 
-    response = chat_model.invoke(prompt)
+    # response = chat_model.invoke(prompt)
 
-
+    # Making chain 
+    # sirf ekk baar invoke hua hae 
+    chain = template | chat_model
+    response = chain.invoke({
+        "role": role_variable,
+        "topic": topic_variable,
+        "difficulty": difficulty_variable
+    })
     # --------------------------------------
     # STEP 3: Display Result
     # --------------------------------------
