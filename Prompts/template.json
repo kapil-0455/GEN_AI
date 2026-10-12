@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "difficulty",
+        "role",
+        "topic"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are a {role}.\n\nExplain the following topic:\n\nTopic: {topic}\n\nDifficulty Level: {difficulty}\n\nRules:\n- Explain clearly.\n- Use simple language.\n- Give examples.\n- If appropriate, provide code.\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
