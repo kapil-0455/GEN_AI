@@ -16,6 +16,7 @@ class Review(TypedDict):
 
     name : Annotated[Optional[str] , "Give the name of reviewer"]
 # yae kya krr rha hae kuch alag prompt genertae krkae uskoa attch krr deta hae jsisae hmae btaan nhi pdta kei hmae kya krna hae LLM ko 
+
 # sentiment or summary apnae aap hei nikal deta hae oskae baad hmarae schema ko match krta hae  
 structured_output_model = model.with_structured_output(Review)
 
