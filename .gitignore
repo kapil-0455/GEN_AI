@@ -1,3 +1,6 @@
+.env
+.env.*
+!.env.example
 NLP/test.csv
 NLP/IMDB Dataset.csv/
 RAG/Vector_Store/my_chroma_db/
