@@ -1,0 +1,12 @@
+{
+    "title": "student",
+    "description":"Scehema about stdents",
+    "type": "object",
+    "properties":{
+        "name" : {"type" : "string"},
+        "age" : {"type" : "integer"},
+        "email" : {"type" : "string"},
+        "cgpa" : {"type" : "number"}
+    },
+    "required": ["name", "email", "cgpa"]
+} 

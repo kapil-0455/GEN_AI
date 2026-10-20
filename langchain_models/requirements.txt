@@ -1,0 +1,11 @@
+# Langchain core
+langchain
+langchain-core
+
+# Hugging face integration
+langchain-huggingface
+transformers
+huggingface-hub
+
+# Env
+python-dotenv
